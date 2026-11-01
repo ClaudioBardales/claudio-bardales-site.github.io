@@ -1,0 +1,53 @@
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table, td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 25vh;
+}
+
+
+.page-content{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer img{
+  width: 5%;
+}

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,34 +7,30 @@
     <title>Claudio Bardales | Front End Developer</title>
   </head>
   <body>
+    <header class="site-header" id="home">
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <header class="first-section" id="home">
-        <nav class="navbar">
-          <div class="navbar-container">
-            <a href="#home">Claudio Bardales</a>
-            <ul class="nav-links nav-links-right">
-              <li><a href="#home">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
-      <section>
-        <div>
-          <h1>Claudio Bardales</h1>
-          <img src="images/claudio.jpg" alt="claudio" />
-        </div>
-        <div>
-          <p>Hello!</p>
-          <p>
-            This is my portfolio website. I am a front end developer that is
-            currently in the Computer Science Program at CSUMB!
-          </p>
-          <p>Please contact me!</p>
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Claudio Bardales</h1>
+        <div class="hero-content">
+            <img src="images/claudio.jpg" alt="Claudio Bardales" />
+            <p>
+              Hello! This is my portfolio website. <br> I am a front end developer
+              currently in the Computer Science program at CSUMB. <br> Please contact me!
+            </p>
         </div>
       </section>
     </main>
+    <footer>
+      <img src="images/CSUMBLOGO.jpg" alt="csumb">
+      <p>Made with love ♥. Claudio Bardales 2026</p>
+    </footer>
   </body>
 </html>
