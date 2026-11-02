@@ -1,19 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 body {
-  /* 4. Increase line-height */
-  line-height: 1.5;
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: darkgrey;
 }
 
-table, td, th{
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 25vh;
-}
 
 
 .page-content{
@@ -24,30 +25,95 @@ table, td, th{
   align-items: center;
 }
 
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .nav-links {
   display: flex;
+  justify-content: center;
   gap: 3rem;
   list-style: none;
-  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
-.experience-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.nav-links a {
+  color: #17333b;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: teal;
+  text-decoration: underline;
+}
+
+.experience-section {
+  width: min(100%, 600px);
+}
+
+.experience-section h2 {
+  margin-bottom: 1rem;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.experience-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
+}
+
+.experience-table th,
+.experience-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #d8e2e5;
+  text-align: left;
+}
+
+.experience-table th {
+  background: #176c75;
+  color: white;
+}
+
+.experience-table tbody tr:nth-child(even) {
+  background: #f1f6f5;
+}
+
+.experience-table tbody tr:hover {
+  background: #e2f0ed;
+}
+
+.experience-table td:last-child,
+.experience-table th:last-child {
+  text-align: right;
+  white-space: nowrap;
 }
 
 
-footer{
-  justify-content: center;
+footer {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  color: #176c75;
+  font-size: 0.85rem;
 }
 
-footer img{
-  width: 5%;
+footer img {
+  width: 140px;
+  height: auto;
 }
